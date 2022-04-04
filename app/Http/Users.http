@@ -1,0 +1,33 @@
+HTTP/users.http
+GET http://127.0.0.1:3333/
+content-type: application/json
+###
+
+GET http://127.0.0.1:3333/users/
+content-type: application/json
+###
+
+POST http://127.0.0.1:3333/users HTTP/1.1
+content-type: application/json
+{
+  "username": "joaozinho",
+  "password": "asdf1904",
+  "email": "joaozinho@gmail.com"
+}
+###
+
+GET http://127.0.0.1:3333/users/1
+content-type: application/json
+###
+
+PUT http://127.0.0.1:3333/users/1 HTTP/1.1
+content-type: application/json
+
+{
+  "username": "pedrita",
+  "password": "asdf1904"
+}
+###
+
+DELETE http://127.0.0.1:3333/users/1
+###
